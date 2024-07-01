@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!--tailwind  -->
+
+    <!-- <link rel="stylesheet" href="/tailwind.config.js" /> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- tailwind end -->
+
+    <!-- acc -->
+
+    <!--  -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/Style.css" />
+    <title>Demo</title>
+  </head>
+  <body>
+    <main class="">
+      <!-- Navbar start -->
+      <header class="relative">
+        <nav class="flex justify-between navbar fix-navbar items-center">
+          <div class="logo">
+            <a href="/index.html"
+              ><img width="100%" src="wecare_logo.svg" alt=""
+            /></a>
+          </div>
+
+          <ul class="text-black flex justify-evenly items-center gap-10">
+            <li>
+              <a href="/index.html"><h5>Home</h5></a>
+            </li>
+            <li>
+              <a href="/next.html"><h5>Desination</h5></a>
+            </li>
+            <li>
+              <a href="/3rdPage.html"><h5>Cars</h5></a>
+            </li>
+            <li>
+              <a href="/fouthPage.html"><h5>Blogs</h5></a>
+            </li>
+            <li><h5>Pages</h5></li>
+          </ul>
+
+          <i class="fa-solid fa-bars menu"></i>
+        </nav>
+
+        <div class="bg-white absolute hidden-menus">
+          <ul
+            class="text-black flex flex-col p-4 justify-evenly items-center gap-4 w-full"
+          >
+            <li><h5>Home</h5></li>
+            <li><h5>Destination</h5></li>
+            <li><h5>Cars</h5></li>
+            <li><h5>Blogs</h5></li>
+            <li><h5>Pages</h5></li>
+          </ul>
+        </div>
+      </header>
+      <!-- Navbar end -->
+
+      <!-- hero start -->
+      <section class="w-full main-hero relative">
+        <div class="hero rounded-lg">
+          <div class="content-main flex justify-center items-center flex-col">
+            <h1 class="main-head">
+              Book your first car rental through <br />
+              our app and get up to 25% off!
+            </h1>
+            <button class="explore-btn mt-5">Explore Now</button>
+          </div>
+          <div class="enters p-2">
+            <div
+              class="buttons w-full flex items-center justify-center gap-4 mb-4"
+            >
+              <button
+                class="input-btn-top"
+                onclick="toggleInputs('outstation')"
+              >
+                Outstation
+              </button>
+              <button class="top-1" onclick="toggleInputs('sightseeing')">
+                Sightseeing
+              </button>
+            </div>
+
+            <div
+              class="inputs-main grid grid-cols-2 lg:grid-cols-3 gap-5"
+              id="inputsContainer"
+            >
+              <!-- Inputs for Outstation -->
+              <div class="input-search relative" id="inputFrom">
+                <i class="fa-solid fa-location-dot pin"></i>
+                <input class="input-se" placeholder="From" type="text" />
+                <i class="fa-solid fa-right-left swap"></i>
+              </div>
+
+              <div class="input-search relative" id="inputTo">
+                <i class="fa-solid fa-location-dot pin"></i>
+                <input class="input-se w-full" placeholder="To" type="text" />
+              </div>
+
+              <div class="input-search relative" id="inputPassengers">
+                <i class="fa-solid fa-user-group pin"></i>
+                <input class="input-se" placeholder="Passengers" type="text" />
+              </div>
+
+              <div class="input-search relative" id="inputLuggage">
+                <i class="fa-solid fa-suitcase-rolling pin"></i>
+                <input class="input-se" placeholder="Luggage" type="text" />
+              </div>
+
+              <div class="input-search relative" id="inputDate">
+                <i class="fa-solid fa-calendar-days pin"></i>
+                <input class="input-se w-full" placeholder="Date" type="date" />
+              </div>
+
+              <div class="input-search relative" id="inputTime">
+                <i class="fa-solid fa-clock pin"></i>
+                <input class="input-se" placeholder="Time" type="text" />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center w-full mt-4">
+              <button class="results">Show Results</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero end -->
+
+      <!-- progree bar -->
+
+      <section class="space-new" id="main">
+        <div class="flex items-center justify-center">
+          <div class="lg:w-10/12">
+            <div class="container-timeline">
+              <ul class="timeline-list">
+                <li>
+                  <div class="timeline-content">
+                    <h6 class="font-semibold">Choose a vehicle</h6>
+                    <p class="mt-2 text-lg">
+                      Unlock unparalleled adventures and memorable journeys with
+                      our vast fleet of vehicles tailored to suit every need,
+                      taste, and destination.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h6 class="font-semibold">Pick location &amp; date</h6>
+                    <p class="mt-2 text-lg">
+                      Pick your ideal location and date, and let us take you on
+                      a journey filled with convenience, flexibility, and
+                      unforgettable experiences.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h6 class="font-semibold">Make a booking</h6>
+                    <p class="mt-2 text-lg">
+                      Secure your reservation with ease, unlocking a world of
+                      possibilities and embarking on your next adventure with
+                      confidence.
+                    </p>
+                  </div>
+                </li>
+                <li>
+                  <div class="timeline-content">
+                    <h6 class="font-semibold">Sit back &amp; relax</h6>
+                    <p class="mt-2 text-lg">
+                      Hassle-free convenience as we take care of every detail,
+                      allowing you to unwind and embrace a journey filled with
+                      comfort.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- start demo -->
+
+      <section class="space-new" id="gayab">
+        <div class="flex items-center justify-center">
+          <div class="lg:w-10/12">
+            <div class="container-timeline">
+              <img src="/photo/backup.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end demo -->
+
+      <!-- progrees end -->
+
+      <!-- why chose us -->
+
+      <section class="why rounded-sm">
+        <div class="why-main rounded-lg">
+          <h5 class="font-semibold upper-h5 start-0">Why Choose WeCabs?</h5>
+          <div class="img-why">
+            <img src="/photo/car.jpg" width="400px" class="why-img" alt="" />
+            <img
+              src="/photo/car2.png"
+              width="400px"
+              class="why-img car2"
+              alt=""
+            />
+          </div>
+
+          <div class="content-why">
+            <div>
+              <h5 class="font-semibold">Why Choose WeCabs?</h5>
+              <p class="content-para">
+                Say goodbye to hailing cabs or waiting in long lines. WeCabs is
+                your one-stop shop for getting around town quickly and easily.
+                With our user-friendly app, you can book a cab in seconds, track
+                its arrival in real-time, and pay for your ride securely – all
+                from your phone.
+              </p>
+            </div>
+
+            <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="checkbox-why flex items-center">
+                <img src="/photo/Black.png" width="15px" alt="" />
+                <p class="ml-2">Wide range of options</p>
+              </div>
+              <div class="checkbox-why flex items-center">
+                <img src="/photo/Black.png" width="15px" alt="" />
+                <p class="ml-2">Upfront fares</p>
+              </div>
+              <div class="checkbox-why flex items-center">
+                <img src="/photo/Black.png" width="15px" alt="" />
+                <p class="ml-2">24/7 availability</p>
+              </div>
+              <div class="checkbox-why flex items-center">
+                <img src="/photo/Black.png" width="15px" alt="" />
+                <p class="ml-2">Multiple payment methods</p>
+              </div>
+            </div>
+            <button class="learn">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- end chose -->
+
+      <section class="why mt-12 mb-6">
+        <div><h2>Our Happy Customers</h2></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+          <div
+            class="test-box test1 flex flex-col justify-end p-5 text-white bg-gray-800 rounded-lg"
+          >
+            <div>
+              <i class="fa-solid fa-quote-right text-white float-right"></i>
+            </div>
+            <h3 class="mb-2">
+              Excellent Service! Car
+              <span class="text-pink-400">Rent</span> Service!
+            </h3>
+            <p>
+              I have been using Rentaly for my Car Rental needs for over 5 years
+              now. I have never had any problems with their service. Their
+              customer support is always responsive and helpful. I would
+              recommend Rentaly to anyone looking for a reliable Car Rental
+              provider.
+            </p>
+          </div>
+          <div
+            class="test-box test2 flex flex-col justify-end p-5 text-white bg-gray-800 rounded-lg"
+          >
+            <div>
+              <i class="fa-solid fa-quote-right text-white float-right"></i>
+            </div>
+            <h3 class="mb-2">
+              Excellent Service! Car
+              <span class="text-pink-400">Rent</span> Service!
+            </h3>
+            <p>
+              I have been using Rentaly for my Car Rental needs for over 5 years
+              now. I have never had any problems with their service. Their
+              customer support is always responsive and helpful. I would
+              recommend Rentaly to anyone looking for a reliable Car Rental
+              provider.
+            </p>
+          </div>
+          <div
+            class="test-box test3 flex flex-col justify-end p-5 text-white bg-gray-800 rounded-lg"
+          >
+            <div>
+              <i class="fa-solid fa-quote-right text-white float-right"></i>
+            </div>
+            <h3 class="mb-2">
+              Excellent Service! Car
+              <span class="text-pink-400">Rent</span> Service!
+            </h3>
+            <p>
+              I have been using Rentaly for my Car Rental needs for over 5 years
+              now. I have never had any problems with their service. Their
+              customer support is always responsive and helpful. I would
+              recommend Rentaly to anyone looking for a reliable Car Rental
+              provider.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section class="my-5 map-img">
+        <img src="/photo/map.jpg" width="100%" alt="" />
+      </section>
+
+      <section class="banner-info relative">
+        <div class="again relative flex items-center justify-center gap-3">
+          <div>
+            <h2>
+              Book your first car rental
+              <span class="text-pink-400">through</span> our app and get up to
+              25% off!
+            </h2>
+          </div>
+
+          <div class="enters2 p-2">
+            <div
+              class="buttons w-full flex items-center justify-center gap-4 mb-4"
+            >
+              <button class="input-btn-top">Outstation</button>
+              <button class="top-1">Sightseeing</button>
+            </div>
+
+            <div class="inputs-main grid grid-cols-2 lg:grid-cols-3 gap-5">
+              <div class="input-search relative">
+                <i class="fa-solid fa-location-dot pin"></i>
+                <input class="input-se" placeholder="From" type="text" />
+                <i class="fa-solid fa-right-left swap"></i>
+              </div>
+
+              <div class="input-search relative">
+                <i class="fa-solid fa-location-dot pin"></i>
+                <input class="input-se" placeholder="To" type="text" />
+              </div>
+
+              <div class="input-search relative">
+                <i class="fa-solid fa-user-group pin"></i>
+                <input class="input-se" placeholder="Passengers" type="text" />
+              </div>
+
+              <div class="input-search relative">
+                <i class="fa-solid fa-suitcase-rolling pin"></i>
+                <input class="input-se" placeholder="Luggage" type="text" />
+              </div>
+
+              <div class="input-search relative">
+                <i class="fa-solid fa-calendar-days pin"></i>
+                <input class="input-se" placeholder="Date" type="date" />
+              </div>
+
+              <div class="input-search relative">
+                <i class="fa-solid fa-clock pin"></i>
+                <input class="input-se" placeholder="Time" type="text" />
+              </div>
+            </div>
+
+            <div class="flex items-center justify-center w-full mt-4">
+              <button class="results">Show Results</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- thing to do start -->
+      <section
+        class="my-5 p-5 things thingsto flex items-center justify-center gap-5 flex-wrap"
+      >
+        <div class="flex items-center justify-center flex-col boxes">
+          <img src="/photo/vi.png" width="100px" alt="" />
+          <h3 class="mb-3">Ride in comfort</h3>
+          <p>
+            Choose from a variety of car types to suit your needs, from
+            budget-friendly sedans to spacious SUVs.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-center flex-col boxes">
+          <img src="/photo/sign.png" alt="" />
+          <h3 class="mb-3 mt-3">Ride in comfort</h3>
+          <p>
+            Choose from a variety of car types to suit your needs, from
+            budget-friendly sedans to spacious SUVs.
+          </p>
+        </div>
+
+        <div class="flex items-center justify-center flex-col boxes">
+          <img src="/photo/box.png" alt="" />
+          <h3 class="mb-3 mt-3">Ride in comfort</h3>
+          <p>
+            Choose from a variety of car types to suit your needs, from
+            budget-friendly sedans to spacious SUVs.
+          </p>
+        </div>
+      </section>
+      <!-- thing to do end -->
+
+      <!-- accodion part start -->
+      <h1 class="text-center font-semibold alone">
+        Frequently Asked Questions
+      </h1>
+      <section class="accodian-up mt-8 mb-7 flex items-center justify-center">
+        <div class="accordion">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <input type="checkbox" id="item-1" />
+            <label for="item-1" class="accordion-header">
+              <span>How do I make a reservation at your hotel resort? </span>
+              <span class="arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </label>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates nostrum omnis, cumque laborum tempora quia earum
+                animi nulla soluta, reiciendis non placeat dolorum hic
+                temporibus odit voluptatum et nam nesciunt.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <input type="checkbox" id="item-2" />
+            <label for="item-2" class="accordion-header">
+              <span>How do I make a reservation at your hotel resort? </span>
+              <span class="arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </label>
+            <div class="accordion-content">
+              <p>
+                With our user-friendly app, you can book a cab in seconds, track
+                its arrival in real-time, and pay for your ride securely – all
+                from your phone.
+                <br />
+                <br />
+                With our user-friendly app, you can book a cab in seconds, track
+                its arrival in real-time, and pay for your ride securely – all
+                from your phone.
+              </p>
+
+              <div class="flex items-center justify-start gap-4 mt-5">
+                <img src="/photo/1.png" alt="" />
+                <img src="/photo/2.png" alt="" />
+                <img src="/photo/3.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <input type="checkbox" id="item-3" />
+            <label for="item-3" class="accordion-header">
+              <span>How do I make a reservation at your hotel resort? </span>
+              <span class="arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </label>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates nostrum omnis, cumque laborum tempora quia earum
+                animi nulla soluta, reiciendis non placeat dolorum hic
+                temporibus odit voluptatum et nam nesciunt.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end accodian -->
+
+      <!-- footer start -->
+      <section>
+        <div class="footer text-white">
+          <div class="container footer-cover mx-auto px-4">
+            <div class="flex flex-wrap -mx-4">
+              <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+                <div class="footer-about">
+                  <h3 class="text-xl font-bold mb-4">About Us</h3>
+                  <div class="line mb-6"></div>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo
+                    dictum nec non quam. Tortor eu placerat rhoncus, lorem quam
+                    iaculis felis, sed lacus neque id eros.
+                  </p>
+
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo
+                    dictum nec non quam. Tortor eu placerat rhoncus, lorem quam
+                    iaculis felis, sed lacus neque id eros.
+                  </p>
+                  <div class="footer-social flex space-x-4">
+                    <a href="#" class="text-white hover:text-gray-400"
+                      ><i class="fab fa-twitter"></i
+                    ></a>
+                    <a href="#" class="text-white hover:text-gray-400"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="#" class="text-white hover:text-gray-400"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+
+                    <a href="#" class="text-white hover:text-gray-400"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+                <div class="footer-contact">
+                  <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                  <div class="line mb-6"></div>
+                  <p class="mb-2"><i class="fa-solid fa-minus mr-2"></i>Home</p>
+                  <p class="mb-2">
+                    <i class="fa-solid fa-minus mr-2"></i>Hotels
+                  </p>
+                  <p class="mb-2">
+                    <i class="fa-solid fa-minus mr-2"></i>Flights
+                  </p>
+                  <p class="mb-2">
+                    <i class="fa-solid fa-minus mr-2"></i>Trips
+                  </p>
+                  <p class="mb-2">
+                    <i class="fa-solid fa-minus mr-2"></i>Boats
+                  </p>
+                  <p class="mb-2">
+                    <a href="next.html"
+                      ><i class="fa-solid fa-minus mr-2"></i>Contact Us</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/4 px-4">
+                <div class="footer-project">
+                  <h3 class="text-xl font-bold mb-4">Instagram</h3>
+                  <div class="line mb-6"></div>
+                  <div class="grid grid-cols-3 gap-0">
+                    <a href="#"
+                      ><img
+                        src="/photo/a.png"
+                        alt="Image"
+                        class="w-full h-auto"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/photo/b.png"
+                        alt="Image"
+                        class="w-full h-auto"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/photo/c.png"
+                        alt="Image"
+                        class="w-full h-auto"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/photo/d.png"
+                        alt="Image"
+                        class="w-full h-auto"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/photo/f.png"
+                        alt="Image"
+                        class="w-full h-auto"
+                    /></a>
+                    <a href="#"
+                      ><img
+                        src="/photo/k.png"
+                        alt="Image"
+                        class="w-full h-auto"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 lg:w-1/4 px-4 mb-8 md:mb-0">
+                <div class="footer-about">
+                  <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                  <div class="line mb-6"></div>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo
+                    dictum nec non quam. Tortor eu placerat rhoncus, lorem quam
+                    iaculis felis, sed lacus neque id eros.
+                  </p>
+                  <div
+                    class="footer-social-email flex flex-col items-start gap-3"
+                  >
+                    <input type="text" placeholder="enter your email" />
+                    <button class="email">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="container mx-auto px-4 mt-8">
+            <p class="text-center mb-4">
+              Lorem ipsum dolor sit amet elit. Quisque eu lectus a leo dictum
+              nec non quam. Tortor eu placerat rhoncus, lorem quam iaculis
+              felis, sed lacus neque id eros.
+            </p>
+            <div class="flex flex-wrap justify-center -mx-4">
+              <div class="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
+                <input
+                  class="form-control w-full px-4 py-2"
+                  placeholder="Your Name"
+                />
+              </div>
+              <div class="w-full sm:w-1/3 px-4 mb-4 sm:mb-0">
+                <input
+                  class="form-control w-full px-4 py-2"
+                  placeholder="Your Email"
+                />
+              </div>
+              <div class="w-full sm:w-1/3 px-4">
+                <button
+                  class="btn w-full px-4 py-2 bg-blue-500 text-white rounded"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div> -->
+          <div class="copy-right py-4 mt-8">
+            <div class="container mx-auto px-4">
+              <div class="flex flex-wrap items-center -mx-4">
+                <div class="w-full">
+                  <p class="text-center">
+                    © Copyright @Wecabs 2024 All Right Reserved.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer end -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/jolty@0.6.2/dist/jolty.min.js"></script>
+
+    <script type="module"></script>
+
+    <script>
+      // start here
+
+      // Function to toggle inputs based on button click
+      function toggleInputs(mode) {
+        const inputsContainer = document.getElementById("inputsContainer");
+        const inputFrom = document.getElementById("inputFrom");
+        const inputTo = document.getElementById("inputTo");
+        const inputPassengers = document.getElementById("inputPassengers");
+        const inputLuggage = document.getElementById("inputLuggage");
+        const inputDate = document.getElementById("inputDate");
+        const inputTime = document.getElementById("inputTime");
+
+        if (mode === "outstation") {
+          // Show all inputs for Outstation mode
+          inputsContainer.classList.remove("grid-cols-2");
+          inputsContainer.classList.add("grid-cols-3");
+          inputFrom.style.display = "grid";
+          inputTo.style.display = "grid";
+          inputPassengers.style.display = "grid";
+          document
+            .getElementById("inputsContainer")
+            .classList.remove("grid-cols-2", "lg:grid-cols-3");
+          document
+            .getElementById("inputsContainer")
+            .classList.add("grid-cols-1", "lg:grid-cols-3");
+          inputLuggage.style.display = "grid";
+          inputDate.style.display = "grid";
+          inputTime.style.display = "grid";
+        } else if (mode === "sightseeing") {
+          // Show only Destination and Date inputs for Sightseeing mode
+          inputsContainer.classList.remove("grid-cols-3");
+          inputsContainer.classList.add("grid-cols-2");
+          inputFrom.style.display = "none";
+          inputTo.style.display = "grid";
+          document
+            .getElementById("inputsContainer")
+            .classList.remove("grid-cols-2", "lg:grid-cols-3");
+          document
+            .getElementById("inputsContainer")
+            .classList.add("grid-cols-1", "lg:grid-cols-2");
+          inputPassengers.style.display = "none";
+          inputLuggage.style.display = "none";
+          inputDate.style.display = "grid";
+          inputTime.style.display = "none";
+        }
+      }
+
+      // end here
+
+      let hiddenBox = document.querySelector(".hidden-menus");
+      document.querySelector(".menu").addEventListener("click", function () {
+        hiddenBox.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
