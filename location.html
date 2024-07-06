@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,24 +11,28 @@
     <meta name="author" content="pixelstrap" />
     <link rel="icon" href="wecare_logo.svg" type="image/x-icon" />
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <title>We Care Cabs-All Bookings</title>
+    <title>We Care Cabs- Add New User</title>
     <!-- Google font-->
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
       rel="stylesheet"
     />
-
-    <!-- FontAsowme css start  -->
     <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
 
     <!-- Themify icon-->
     <link rel="stylesheet" type="text/css" href="css/themify.css" />
+
+    <!--Dropzon start-->
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css" />
+    <!--Dropzon end-->
 
     <!-- Feather icon-->
     <link rel="stylesheet" type="text/css" href="css/feather-icon.css" />
     <!-- Plugins css start-->
     <link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/chartist.css" />
+    <link rel="stylesheet" type="text/css" href="css/date-picker.css" />
     <!-- Plugins css Ends-->
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -191,7 +195,7 @@
                     <div class="media">
                       <img
                         class="img-fluid rounded-circle me-3"
-                        src="images/4_1.jpg"
+                        src="images/4.jpg"
                         alt="user3"
                       />
                       <div class="status-circle offline"></div>
@@ -219,7 +223,7 @@
                 <div class="media profile-media">
                   <img
                     class="user-profile rounded-circle"
-                    src="images/4.jpg"
+                    src="images/4_1.jpg"
                     alt="profile-picture"
                   />
                   <div class="user-name-hide media-body">
@@ -291,7 +295,7 @@
           </script>
         </div>
       </div>
-      <!-- Page Header Ends -->
+      <!-- Page Header Ends-->
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
@@ -464,370 +468,234 @@
           <!-- Container-fluid starts-->
           <div class="container-fluid">
             <div class="row">
-              <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-header card-header--2">
-                    <h5>All Bookings</h5>
-                  </div>
-
-                  <div class="card-body">
-                    <div>
-                      <div class="table-responsive table-desi">
-                        <table class="Booking-table table table-striped">
-                          <thead>
-                            <tr>
-                              <th>Type</th>
-                              <th>Title</th>
-                              <th>Price</th>
-                              <th>Order Date</th>
-
-                              <th>Status</th>
-                              <th>Action</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td><i class="fa fa-plane"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Dubai To Paris</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
-
-                              <td>
-                                <span class="status status--past">Past</span>
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Add New User</h5>
+                      </div>
+                      <div class="card-body">
+                        <form class="theme-form mega-form">
+                          <div class="mb-3">
+                            <!-- start -->
+                            <div class="">
+                              <div class="row mb-3">
+                                <div class="col-12 col-md-6">
+                                  <label class="form-label-title"
+                                    >Country</label
+                                  >
+                                  <select class="form-control">
+                                    <option value="">Select Country</option>
+                                    <option value="india">India</option>
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="australia">Australia</option>
+                                  </select>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-building"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Sea View Hotel</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
-
-                              <td>
-                                <span class="status status--cancel"
-                                  >Cancelled</span
-                                >
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+                                <div class="col-12 col-md-6">
+                                  <label class="form-label-title">City</label>
+                                  <select class="form-control">
+                                    <option value="">Select City</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="newyork">New York</option>
+                                    <option value="toronto">Toronto</option>
+                                    <option value="sydney">Sydney</option>
+                                  </select>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-car"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Paris To Toulouse</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
+                              </div>
+                            </div>
 
-                              <td>
-                                <span class="status status--upcoming"
-                                  >Upcoming</span
-                                >
-                              </td>
+                            <!-- end -->
+                          </div>
 
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+                          <div class="mb-3">
+                            <div
+                              class="d-flex justify-content-between align-center"
+                            >
+                              <label class="form-label-title">
+                                Add Transportation Sources
+                              </label>
+                              <button
+                                class="mb-2 add-new-transportation btn btn-primary me-3"
+                              >
+                                +Add New
+                              </button>
+                            </div>
+                            <div id="transportation-container">
+                              <div class="row input-row">
+                                <div class="col-12 col-md-2 mb-3">
+                                  <select class="form-control">
+                                    <option>Vehicle Category</option>
+                                    <option>Air</option>
+                                    <option>Land</option>
+                                    <option>Water</option>
+                                  </select>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-plane"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Dubai To Paris</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
-
-                              <td>
-                                <span class="status status--upcoming"
-                                  >Upcoming</span
-                                >
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+                                <div class="col-12 col-md-4 mb-3">
+                                  <select class="form-control">
+                                    <option>Vehicle Type</option>
+                                    <option>Innova</option>
+                                    <option>SUV</option>
+                                    <option>Sedan</option>
+                                  </select>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-building"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Sea View Hotel</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
-
-                              <td>
-                                <span class="status status--past">Past</span>
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+                                <div class="col-12 col-md-3 mb-3">
+                                  <select class="form-control">
+                                    <option>Passengers</option>
+                                    <option>Kids</option>
+                                    <option>Adult</option>
+                                  </select>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-car"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Paris To Toulouse</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
-
-                              <td>
-                                <span class="status status--cancel"
-                                  >Cancelled</span
-                                >
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+                                <div class="col-12 col-md-3 mb-3">
+                                  <select class="form-control">
+                                    <option>Luggage</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                  </select>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-plane"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Dubai To Paris</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
+                              </div>
+                            </div>
+                          </div>
 
-                              <td>
-                                <span class="status status--past">Past</span>
-                              </td>
+                          <div class="mb-3">
+                            <div
+                              class="d-flex justify-content-between align-center"
+                            >
+                              <label class="form-label-title">
+                                Create Route
+                              </label>
+                              <button
+                                class="mb-2 add-new-route btn btn-primary me-3"
+                              >
+                                +Add New
+                              </button>
+                            </div>
 
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+                            <div id="route-container">
+                              <div class="route-form">
+                                <input
+                                  class="form-control"
+                                  type="text"
+                                  placeholder="Add Route Headline"
+                                />
+                                <input
+                                  class="form-control mt-3"
+                                  type="text"
+                                  placeholder="Add Destination"
+                                />
+
+                                <div class="mt-3">
+                                  <div class="row mb-3">
+                                    <div class="col-12 col-md-6">
+                                      <select class="form-control">
+                                        <option value="">
+                                          City/Location: 1
+                                        </option>
+                                        <option value="india">India</option>
+                                        <option value="usa">USA</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="australia">
+                                          Australia
+                                        </option>
+                                      </select>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <select class="form-control">
+                                        <option value="">
+                                          City/Location: 2
+                                        </option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="newyork">
+                                          New York
+                                        </option>
+                                        <option value="toronto">Toronto</option>
+                                        <option value="sydney">Sydney</option>
+                                      </select>
+                                    </div>
+                                  </div>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-building"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Sea View Hotel</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
 
-                              <td>
-                                <span class="status status--upcoming"
-                                  >Upcoming</span
-                                >
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
+                                <div class="mt-3">
+                                  <div class="row mb-3">
+                                    <div class="col-12 col-md-6">
+                                      <input
+                                        class="form-control"
+                                        type="number"
+                                        placeholder="Distance"
+                                      />
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                      <input
+                                        class="form-control"
+                                        type="time"
+                                        placeholder="Duration/Time"
+                                      />
+                                    </div>
+                                  </div>
                                 </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-car"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Paris To Toulouse</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- end route -->
 
-                              <td>
-                                <span class="status status--cancel"
-                                  >Cancelled</span
-                                >
-                              </td>
+                          <div class="mb-3">
+                            <label class="form-label-title"
+                              >Completed Route Details</label
+                            >
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Places Covered"
+                            />
+                            <input
+                              class="form-control mt-3"
+                              type="text"
+                              placeholder="Things to Note"
+                            />
+                          </div>
 
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-plane"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Dubai To Paris</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
-
-                              <td>
-                                <span class="status status--past">Past</span>
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td><i class="fa fa-building"> </i></td>
-                              <td>
-                                <a href="#"
-                                  ><span class="d-block"
-                                    >Sea View Hotel</span
-                                  ></a
-                                >
-                              </td>
-                              <td>$2500</td>
-                              <td>20 Oct, 2020</td>
-
-                              <td>
-                                <span class="status status--cancel"
-                                  >Cancelled</span
-                                >
-                              </td>
-
-                              <td>
-                                <div
-                                  data-bs-toggle="tooltip"
-                                  data-bs-placement="left"
-                                  title="cancel"
-                                >
-                                  <i data-feather="x"></i>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                          <div class="mb-3">
+                            <label class="form-label-title"
+                              >Upload Route Images</label
+                            >
+                            <div class="dropzone" id="multipleFileUpload">
+                              <div class="dz-message needsclick">
+                                <i class="icon-cloud-up"></i>
+                                <h6>Drop files here or click to upload.</h6>
+                                <!-- <span class="note needsclick"
+                                  >(This is just a demo dropzone. Selected files
+                                  are <strong>not</strong> actually
+                                  uploaded.)</span
+                                > -->
+                              </div>
+                            </div>
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label-title"
+                              >Add Terms and Conditions</label
+                            >
+                            <textarea
+                              name="add"
+                              placeholder="Terms and Conditions/list"
+                              class="form-control"
+                              id=""
+                            ></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="card-footer text-end">
+                        <button class="btn btn-primary me-3">Submit</button>
+                        <button class="btn btn-outline-primary">Cancel</button>
                       </div>
                     </div>
-                  </div>
-
-                  <div class="pagination-box">
-                    <nav class="ms-auto me-auto" aria-label="...">
-                      <ul class="pagination pagination-primary">
-                        <li class="page-item disabled">
-                          <a
-                            class="page-link"
-                            href="javascript:void(0)"
-                            tabindex="-1"
-                            >Previous</a
-                          >
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0)">1</a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="javascript:void(0)"
-                            >2 <span class="sr-only">(current)</span></a
-                          >
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0)">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0)"
-                            >Next</a
-                          >
-                        </li>
-                      </ul>
-                    </nav>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid Ends-->
-
           <div class="container-fluid">
             <!-- footer start-->
             <footer class="footer">
@@ -862,6 +730,7 @@
               data-bs-dismiss="modal"
               aria-label="Close"
             ></button>
+
             <div class="button-box">
               <button type="button" class="btn btn--no" data-bs-dismiss="modal">
                 No
@@ -885,16 +754,12 @@
     <!-- scrollbar js-->
     <script src="js/simplebar.js"></script>
     <script src="js/custom.js"></script>
-    <!-- Sidebar jquery-->
-    <script src="js/config.js"></script>
-
-    <!-- tooltip init js  start-->
-    <script src="js/tooltip-init.js"></script>
-    <!-- tooltip init js  end-->
 
     <!-- customizer js start  -->
     <script src="js/customizer.js"></script>
     <!-- customizer js start  -->
+    <!-- Sidebar jquery-->
+    <script src="js/config.js"></script>
     <!-- Plugins JS start-->
     <script src="js/sidebar-menu.js"></script>
     <script src="js/bootstrap-notify.min.js"></script>
@@ -905,8 +770,121 @@
     <script src="js/typeahead.custom.js"></script>
     <script src="js/handlebars_1.js"></script>
     <script src="js/typeahead-custom.js"></script>
-
     <!-- Plugins JS Ends-->
+
+    <!--Dropzon start-->
+    <script src="js/dropzone.js"></script>
+    <script src="js/dropzone-script.js"></script>
+    <!--Dropzon end-->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const addNewTransportationButton = document.querySelector(
+          ".add-new-transportation"
+        );
+        const addNewRouteButton = document.querySelector(".add-new-route");
+        const transportationContainer = document.getElementById(
+          "transportation-container"
+        );
+        const routeContainer = document.getElementById("route-container");
+
+        addNewTransportationButton.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Clone the input row
+          const newRow = transportationContainer
+            .querySelector(".input-row")
+            .cloneNode(true);
+
+          // Optionally, you can reset the values of the cloned inputs
+          newRow
+            .querySelectorAll("select")
+            .forEach((select) => (select.selectedIndex = 0));
+
+          // Append the new row to the container
+          transportationContainer.appendChild(newRow);
+        });
+
+        addNewRouteButton.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Clone the form
+          const newForm = routeContainer
+            .querySelector(".route-form")
+            .cloneNode(true);
+
+          // Optionally, you can reset the values of the cloned inputs
+          newForm
+            .querySelectorAll("input")
+            .forEach((input) => (input.value = ""));
+          newForm
+            .querySelectorAll("select")
+            .forEach((select) => (select.selectedIndex = 0));
+
+          // Append the new form to the container
+          routeContainer.appendChild(newForm);
+        });
+      });
+    </script>
+
+    <script>
+      Dropzone.autoDiscover = false;
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize Dropzone for multiple file uploads
+        var myDropzone = new Dropzone("#multipleFileUpload", {
+          url: "/your-upload-url", // Specify your upload URL here
+          paramName: "file", // The name that will be used to transfer the file
+          maxFilesize: 5, // MB
+          maxFiles: 5, // Max number of files
+          acceptedFiles: ".jpg, .jpeg, .png, .gif", // Specify allowed file types
+          addRemoveLinks: true, // Enable remove file links
+          dictRemoveFile: "Remove file", // Remove file text
+          dictDefaultMessage: "Drop files here or click to upload.", // Default message for Dropzone
+          dictFallbackMessage:
+            "Your browser does not support drag'n'drop file uploads.", // Fallback message for old browsers
+          dictFileTooBig:
+            "File is too big ({{filesize}}MB). Max filesize: {{maxFilesize}}MB.", // File too big message
+          dictInvalidFileType: "You can't upload files of this type.", // Invalid file type message
+          dictCancelUpload: "Cancel upload", // Cancel upload text
+          dictUploadCanceled: "Upload canceled.", // Upload canceled message
+          dictCancelUploadConfirmation:
+            "Are you sure you want to cancel this upload?", // Cancel upload confirmation text
+          dictMaxFilesExceeded: "You can not upload any more files.", // Max files exceeded message
+          autoProcessQueue: false, // Prevent automatic upload on file add
+          parallelUploads: 5, // Number of parallel uploads
+
+          // Optional event handlers
+          init: function () {
+            var submitButton = document.querySelector("#submit-all");
+
+            this.on("addedfile", function (file) {
+              // Hook for when a file is added
+              console.log("Added file:", file);
+            });
+
+            this.on("removedfile", function (file) {
+              // Hook for when a file is removed
+              console.log("Removed file:", file);
+            });
+
+            this.on("error", function (file, message) {
+              // Hook for when an error occurs
+              console.error("Error:", message);
+            });
+
+            this.on("success", function (file, response) {
+              // Hook for when a file is successfully uploaded
+              console.log("Success:", response);
+            });
+
+            submitButton.addEventListener("click", function () {
+              // Manually trigger file upload when submit button is clicked
+              myDropzone.processQueue();
+            });
+          },
+        });
+      });
+    </script>
     <!-- Theme js-->
     <script src="js/script.js"></script>
 
