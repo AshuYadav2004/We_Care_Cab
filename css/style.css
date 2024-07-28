@@ -25997,7 +25997,7 @@ footer {
   text-transform: uppercase;
   font-weight: 700;
   padding: calc(8px + (14 - 8) * ((100vw - 320px) / (1920 - 320)))
-    calc(12px + (30 - 12) * ((100vw - 320px) / (1920 - 320)));
+    calc(12px + (25 - 12) * ((100vw - 320px) / (1920 - 320)));
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -53792,3 +53792,40 @@ html[dir="rtl"] .grow svg {
   }
 }
 /*# sourceMappingURL=style.css.map */
+
+
+
+.step-container {
+  position: relative;
+  text-align: center;
+  transform: translateY(-43%);
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #007bff;
+  line-height: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  cursor: pointer; /* Added cursor pointer */
+}
+
+.step-line {
+  position: absolute;
+  top: 16px;
+  left: 50px;
+  width: calc(100% - 100px);
+  height: 2px;
+  background-color: #007bff;
+  z-index: -1;
+}
+
+#multi-step-form{
+  overflow-x: hidden;
+}

@@ -1,0 +1,2369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="We Care Admin super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities."
+    />
+
+    <meta name="author" content="pixelstrap" />
+    <link rel="icon" href="wecare_logo.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <title>We Care Cabs- Add new Destinations</title>
+    <!-- Google font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="css/themify.css" />
+    <link
+      href="node_modules/froala-editor/css/froala_editor.pkgd.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!--Drop zon-->
+    <link rel="stylesheet" type="text/css" href="css/dropzone.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/feather-icon.css" />
+    <!-- Plugins css start-->
+    <link rel="stylesheet" type="text/css" href="css/scrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/chartist.css" />
+    <!-- Plugins css Ends-->
+    <!-- Bootstrap css-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- Bootstrap-tag input css-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-tagsinput.css" />
+
+    <!-- App css-->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- Responsive css-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <!-- ckeditor -->
+  </head>
+
+  <body>
+    <!-- pre-loader start -->
+    <div class="loader-wrapper">
+      <img src="wecare_logo.svg" width="100px" alt="loader gif" />
+      <img src="load.gif" width="100px" alt="loader gif" />
+      <!-- <img src="load.gif" alt="loader gif" width="100px" /> -->
+    </div>
+    <!-- pre-loader End -->
+
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    <!-- page-wrapper Start-->
+    <div class="page-wrapper compact-wrapper modern-type" id="pageWrapper">
+      <!-- Page Header Start-->
+      <div class="page-header">
+        <div class="header-wrapper row m-0">
+          <div class="header-logo-wrapper col-auto p-0">
+            <div class="logo-wrapper">
+              <a href="index.html"
+                ><img
+                  class="img-fluid main-logo"
+                  src="wecare_logo.svg"
+                  alt="logo" />
+                <img
+                  class="img-fluid white-logo"
+                  src="wecare_logo.svg"
+                  alt="logo"
+              /></a>
+            </div>
+            <div class="toggle-sidebar">
+              <i
+                class="status_toggle middle sidebar-toggle"
+                data-feather="align-center"
+              ></i>
+            </div>
+          </div>
+
+          <form class="form-inline search-full col" action="#" method="get">
+            <div class="form-group w-100">
+              <div class="Typeahead Typeahead--twitterUsers">
+                <div class="u-posRelative">
+                  <input
+                    class="demo-input Typeahead-input form-control-plaintext w-100"
+                    type="text"
+                    placeholder="Search Anything .."
+                    name="q"
+                    title=""
+                    autofocus=""
+                  />
+                  <i class="close-search" data-feather="x"></i>
+                  <div class="spinner-border Typeahead-spinner" role="status">
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                </div>
+                <div class="Typeahead-menu"></div>
+              </div>
+            </div>
+          </form>
+          <div class="nav-right col-4 pull-right right-header p-0">
+            <ul class="nav-menus">
+              <li>
+                <span class="header-search"><i data-feather="search"></i></span>
+              </li>
+              <li class="onhover-dropdown">
+                <div class="notification-box">
+                  <i class="fa fa-bell-o"> </i
+                  ><span class="badge rounded-pill badge-theme">4 </span>
+                </div>
+                <ul class="notification-dropdown onhover-show-div">
+                  <li>
+                    <i data-feather="bell"></i>
+                    <h6 class="f-18 mb-0">Notitications</h6>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fa fa-circle-o me-3 font-primary"> </i>Delivery
+                      processing <span class="pull-right">10 min.</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fa fa-circle-o me-3 font-success"></i>Order
+                      Complete<span class="pull-right">1 hr</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fa fa-circle-o me-3 font-info"></i>Tickets
+                      Generated<span class="pull-right">3 hr</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <i class="fa fa-circle-o me-3 font-danger"></i>Delivery
+                      Complete<span class="pull-right">6 hr</span>
+                    </p>
+                  </li>
+                  <li>
+                    <a class="btn btn-primary" href="#"
+                      >Check all notification</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li>
+                <div class="mode">
+                  <i class="fa fa-moon-o" aria-hidden="true"></i>
+                </div>
+              </li>
+
+              <li class="onhover-dropdown">
+                <i data-feather="message-square"></i>
+                <ul class="chat-dropdown onhover-show-div">
+                  <li>
+                    <i data-feather="message-square"></i>
+                    <h6 class="f-18 mb-0">Message Box</h6>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <img
+                        class="img-fluid rounded-circle me-3"
+                        src="images/1.jpg"
+                        alt="user1"
+                      />
+                      <div class="status-circle online"></div>
+                      <div class="media-body">
+                        <span>Ashutosh Yadav</span>
+                        <p>Lorem Ipsum is simply dummy...</p>
+                      </div>
+                      <p class="f-12 font-success">58 mins ago</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <img
+                        class="img-fluid rounded-circle me-3"
+                        src="images/2.jpg"
+                        alt="user2"
+                      />
+                      <div class="status-circle online"></div>
+                      <div class="media-body">
+                        <span>Kori Thomas</span>
+                        <p>Lorem Ipsum is simply dummy...</p>
+                      </div>
+                      <p class="f-12 font-success">1 hr ago</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="media">
+                      <img
+                        class="img-fluid rounded-circle me-3"
+                        src="images/4_1.jpg"
+                        alt="user3"
+                      />
+                      <div class="status-circle offline"></div>
+                      <div class="media-body">
+                        <span>Ain Chavez</span>
+                        <p>Lorem Ipsum is simply dummy...</p>
+                      </div>
+                      <p class="f-12 font-danger">32 mins ago</p>
+                    </div>
+                  </li>
+                  <li class="text-center">
+                    <a class="btn btn-primary" href="#">View All </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="maximize">
+                <a
+                  class="text-dark"
+                  href="#!"
+                  onclick="javascript:toggleFullScreen()"
+                  ><i data-feather="maximize"></i
+                ></a>
+              </li>
+              <li class="profile-nav onhover-dropdown pe-0 me-0">
+                <div class="media profile-media">
+                  <img
+                    class="user-profile rounded-circle"
+                    src="images/4.jpg"
+                    alt="profile-picture"
+                  />
+                  <div class="user-name-hide media-body">
+                    <span>Ashutosh Yadav</span>
+                    <p class="mb-0 font-roboto">
+                      Admin <i class="middle fa fa-angle-down"></i>
+                    </p>
+                  </div>
+                </div>
+                <ul class="profile-dropdown onhover-show-div">
+                  <li>
+                    <a href="#"
+                      ><i data-feather="user"></i><span>Account </span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i data-feather="mail"></i><span>Inbox</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i data-feather="file-text"></i><span>Taskboard</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i data-feather="settings"></i><span>Settings</span></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      href="javascript:void(0)"
+                      ><i data-feather="log-out"> </i><span>Log out</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <script class="result-template" type="text/x-handlebars-template">
+            <div class="ProfileCard u-cf">
+              <div class="ProfileCard-avatar"><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-airplay m-0"
+                ><path
+                    d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"
+                  ></path><polygon
+                    points="12 15 17 21 7 21 12 15"
+                  ></polygon></svg></div>
+              <div class="ProfileCard-details">
+                <div class="ProfileCard-realName">{{name}}</div>
+              </div>
+            </div>
+          </script>
+          <script class="empty-template" type="text/x-handlebars-template">
+            <div class="EmptyMessage">Your search turned up 0 results. This most
+              likely means the backend is down, yikes!</div>
+          </script>
+        </div>
+      </div>
+      <!-- Page Header Ends -->
+      <!-- Page Body Start-->
+      <div class="page-body-wrapper">
+        <!-- Page Sidebar Start-->
+        <div class="sidebar-wrapper">
+          <div>
+            <div class="logo-wrapper">
+              <span class="back">Back</span>
+              <div class="back-btn"><i class="fa fa-angle-left"></i></div>
+              <div class="toggle-sidebar">
+                <i
+                  class="status_toggle middle sidebar-toggle"
+                  data-feather="grid"
+                >
+                </i>
+              </div>
+            </div>
+            <div class="logo-icon-wrapper">
+              <a href="index.html"
+                ><img class="img-fluid" src="images/logo-icon.png" alt=""
+              /></a>
+            </div>
+            <nav class="sidebar-main">
+              <div class="left-arrow" id="left-arrow">
+                <i data-feather="arrow-left"></i>
+              </div>
+              <div id="sidebar-menu">
+                <ul class="sidebar-links" id="simple-bar">
+                  <li class="back-btn">
+                    <a href="index.html"
+                      ><img class="img-fluid" src="images/logo-icon.png" alt=""
+                    /></a>
+                    <div class="mobile-back text-end">
+                      <span>Back</span
+                      ><i class="fa fa-angle-right ps-2" aria-hidden="true"></i>
+                    </div>
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="index.html"
+                      ><i data-feather="home"> </i><span>Dashboard</span></a
+                    >
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title" href="#"
+                      ><i data-feather="map"></i><span>Destinations</span></a
+                    >
+                    <ul class="sidebar-submenu">
+                      <li><a href="all-packages.html">All Destinations</a></li>
+                      <li>
+                        <a href="package-detail.html">Destinations Detail</a>
+                      </li>
+                      <li>
+                        <a href="add-new-destinations.html">Add Destinations</a>
+                      </li>
+                      <li>
+                        <a href="all-package-categories.html"
+                          >All Destination Categories</a
+                        >
+                      </li>
+                      <li>
+                        <a href="add-package-category.html"
+                          >Add Destination Category</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title" href="#"
+                      ><i data-feather="navigation"></i><span>Cab</span></a
+                    >
+                    <ul class="sidebar-submenu">
+                      <li><a href="all-cars.html">All Cars</a></li>
+                      <li><a href="cars-detail.html">Cars's Details </a></li>
+
+                      <li><a href="add-new-cars.html">Add New Cars</a></li>
+                      <li><a href="all-drivers.html">All Drivers</a></li>
+                      <li><a href="add-driver.html">Add Drivers</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="booking.html"
+                      ><i data-feather="bookmark"> </i><span>Booking</span></a
+                    >
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="location.html"
+                      ><span class="icon">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="feather feather-map-pin"
+                        >
+                          <path
+                            d="M21 10c0 6-9 13-9 13s-9-7-9-13a9 9 0 0 1 18 0z"
+                          ></path>
+                          <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                      </span>
+                      <span>Location</span></a
+                    >
+                  </li>
+                  <li class="sidebar-list">
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="reviews.html"
+                      ><i data-feather="message-square"> </i
+                      ><span>Reviews</span></a
+                    >
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title" href="#"
+                      ><i data-feather="users"></i><span>Users </span></a
+                    >
+                    <ul class="sidebar-submenu">
+                      <li><a href="all-users.html">All users</a></li>
+                      <li><a href="add-new-user.html">Add new user</a></li>
+                    </ul>
+                  </li>
+                  <li class="sidebar-list">
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="setting.html"
+                      ><i data-feather="settings"> </i><span>Setting</span></a
+                    >
+                  </li>
+                  <li class="sidebar-list">
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="login.html"
+                      ><i data-feather="log-in"> </i><span>Log In</span></a
+                    >
+                  </li>
+
+                  <li class="sidebar-list">
+                    <a
+                      class="sidebar-link sidebar-title link-nav"
+                      href="sign-up.html"
+                      ><i data-feather="plus-circle"> </i
+                      ><span>Register</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="right-arrow" id="right-arrow">
+                <i data-feather="arrow-right"></i>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Page Sidebar Ends-->
+        <div class="page-body">
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h5>Add New Destinations</h5>
+                      </div>
+                      <div class="card-body">
+                        <div id="container" class="container mt-5">
+                          <div class="progress px-1" style="height: 3px">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style="width: 0%"
+                              aria-valuenow="0"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                          <div
+                            class="step-container d-flex justify-content-between"
+                          >
+                            <div class="step-circle" onclick="displayStep(1)">
+                              1
+                            </div>
+                            <div class="step-circle" onclick="displayStep(2)">
+                              2
+                            </div>
+                            <div class="step-circle" onclick="displayStep(3)">
+                              3
+                            </div>
+                          </div>
+
+                          <form
+                            id="multi-step-form"
+                            class="theme-form mega-form"
+                          >
+                            <div class="step step-1">
+                              <!-- Step 1 form fields here -->
+                              <h3>Location</h3>
+                              <hr />
+                              <div class="row">
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Seclect Country
+                                    <span
+                                      class="mb-0 font-roboto text-end"
+                                      style="font-size: 11px"
+                                    >
+                                      <i class="middle fa fa-clock-o"></i> 11:30
+                                      PM
+                                    </span>
+                                    <span class="mb-0 font-roboto">
+                                      <i class="middle fa fa-pencil"></i> </span
+                                  ></label>
+                                  <select
+                                    id="tour-category"
+                                    class="js-example-basic-single col-sm-12"
+                                  >
+                                    <option value="">Select Country</option>
+                                    <option value="india">India</option>
+                                    <option value="usa">USA</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="australia">Australia</option>
+                                  </select>
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Seclect City
+                                  </label>
+                                  <select
+                                    id="tour-category"
+                                    class="js-example-basic-single col-sm-12"
+                                  >
+                                    <option value="">Select City</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="newyork">New York</option>
+                                    <option value="toronto">Toronto</option>
+                                    <option value="sydney">Sydney</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <label class="form-label-title">
+                                Google Coordinates- Longitude/Latitude
+                              </label>
+                              <input
+                                class="form-control mb-3"
+                                type="text"
+                                placeholder="eg. 98.4739, -38.4473"
+                              />
+                              <div class="row">
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >from
+                                  </label>
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Add Route Headline"
+                                  />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >to</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Add Route Heading"
+                                  />
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Route Headline</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Add Route Headline"
+                                  />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Route Heading</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Add Route Heading"
+                                  />
+                                </div>
+                              </div>
+
+                              <!--  <div class="row">
+
+                              <div class="col-6 mb-3">
+                                <label for="tour-category" class="form-label-title">Transportation Type</label>
+                                <select class="form-control">
+                                  <option>Transportation Category</option>
+                                  <option>Air</option>
+                                  <option>Land</option>
+                                  <option>Water</option>
+                                </select>
+                              </div>
+
+                              <div class="col-6 mb-3">
+                                <label for="tour-category" class="form-label-title">Vehicle Type</label>
+                                <select id="tour-category" class="js-example-basic-single col-sm-12">
+                                  <option>Vehicle Type</option>
+                                  <option>Innova</option>
+                                  <option>SUV</option>
+                                  <option>Sedan</option>
+                                </select>
+                              </div>
+                            </div> -->
+
+                              <hr />
+                              <br />
+
+                              <div class="card-footer text-end">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary next-step"
+                                >
+                                  Next
+                                </button>
+                              </div>
+                            </div>
+
+                            <div class="step step-2">
+                              <!-- Step 2 form fields here -->
+                              <h3>Create Route</h3>
+                              <hr />
+                              <div class="row">
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Route Headline</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Add Route Headline"
+                                  />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Route Heading</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Add Route Heading"
+                                  />
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Route Distance</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Route Distance in KM"
+                                  />
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Route Duration</label
+                                  >
+                                  <input
+                                    class="form-control"
+                                    type="time"
+                                    placeholder="Add Route Duration"
+                                  />
+                                </div>
+                              </div>
+                              <label class="form-label-title">
+                                Inside Of City Google Coordinates-
+                                Longitude/Latitude
+                              </label>
+                              <input
+                                class="form-control mb-3"
+                                type="text"
+                                placeholder="eg. 98.4739, -38.4473"
+                              />
+                              <div class="row">
+                                <div class="col-12 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Route Discription</label
+                                  >
+                                  <br />
+                                  <textarea
+                                    name="DescriptionOf"
+                                    placeholder="Route Description"
+                                    class="form-control"
+                                    rows="10"
+                                    id="descriptionOf"
+                                  ></textarea>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-12 mb-3">
+                                  <label class="form-label-title"
+                                    >Upload Tour Banner Image here
+                                  </label>
+
+                                  <div class="dropzone" id="singleFileUpload">
+                                    <div class="dz-message needsclick">
+                                      <i class="icon-cloud-up"></i>
+                                      <h6>
+                                        Drop files here or click to upload.
+                                      </h6>
+                                      <span class="note needsclick"
+                                        >(This is just a demo dropzone. Selected
+                                        files are <strong>not</strong> actually
+                                        uploaded.)</span
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-12 mb-3">
+                                  <label class="form-label-title"
+                                    >Upload Tour Gallery Image here
+                                  </label>
+
+                                  <div class="dropzone" id="singleFileUpload">
+                                    <div class="dz-message needsclick">
+                                      <i class="icon-cloud-up"></i>
+                                      <h6>
+                                        Drop files here or click to upload.
+                                      </h6>
+                                      <span class="note needsclick"
+                                        >(This is just a demo dropzone. Selected
+                                        files are <strong>not</strong> actually
+                                        uploaded.)</span
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-12 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Things to note</label
+                                  >
+                                  <textarea
+                                    name="Discription"
+                                    placeholder="Things to note"
+                                    class="form-control"
+                                    rows="5"
+                                    id=""
+                                  ></textarea>
+                                </div>
+                              </div>
+
+                              <div class="row">
+                                <div class="col-12 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Inclusion/Exclusion / Terms and
+                                    conditions</label
+                                  >
+                                  <textarea
+                                    name="Discription"
+                                    placeholder="Terms and conditions"
+                                    class="form-control"
+                                    rows="5"
+                                    id=""
+                                  ></textarea>
+                                </div>
+                              </div>
+
+                              <div class="card-footer text-end">
+                                <button
+                                  type="button"
+                                  class="btn btn-primary prev-step"
+                                >
+                                  Previous
+                                </button>
+                                <button
+                                  type="button"
+                                  class="btn btn-primary next-step"
+                                >
+                                  Next
+                                </button>
+                              </div>
+                            </div>
+
+                            <div class="step step-3">
+                              <!-- Step 3 form fields here -->
+
+                              <div
+                                class="card-header card-header--2 package-card"
+                              >
+                                <div>
+                                  <h5>Priview Destinations</h5>
+                                </div>
+                              </div>
+
+                              <div class="card-body">
+                                <section
+                                  class="single-section small-section bg-inner"
+                                >
+                                  <div class="row">
+                                    <div class="col-12">
+                                      <div
+                                        class="description-section tab-section"
+                                      >
+                                        <div class="detail-img">
+                                          <img
+                                            src="images/spain.jpg"
+                                            class="img-fluid blur-up lazyload"
+                                            alt=""
+                                          />
+                                        </div>
+                                        <div class="menu-top menu-up">
+                                          <ul
+                                            class="nav nav-tabs"
+                                            id="top-tab"
+                                            role="tablist"
+                                          >
+                                            <li class="nav-item">
+                                              <a
+                                                data-bs-toggle="tab"
+                                                class="nav-link active"
+                                                href="#highlight"
+                                                >Overview</a
+                                              >
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                data-bs-toggle="tab"
+                                                class="nav-link"
+                                                href="#itinerary"
+                                                >More Info</a
+                                              >
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                data-bs-toggle="tab"
+                                                class="nav-link"
+                                                href="#gallery"
+                                                >gallery</a
+                                              >
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                data-bs-toggle="tab"
+                                                class="nav-link"
+                                                href="#accommodations"
+                                              >
+                                                Accommodations</a
+                                              >
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                data-bs-toggle="tab"
+                                                class="nav-link"
+                                                href="#location"
+                                                >location</a
+                                              >
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                data-bs-toggle="tab"
+                                                class="nav-link"
+                                                href="#review"
+                                                >reviews</a
+                                              >
+                                            </li>
+                                            <li class="nav-item">
+                                              <a
+                                                data-bs-toggle="tab"
+                                                class="nav-link"
+                                                href="#policy"
+                                                >policies</a
+                                              >
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div
+                                          class="description-details tab-content"
+                                          id="top-tabContent"
+                                        >
+                                          <div
+                                            class="menu-part about tab-pane fade show active"
+                                            id="highlight"
+                                          >
+                                            <div class="about-sec">
+                                              <p class="top-space">
+                                                Hola Espana! The vibrant country
+                                                of Spain beckons for an
+                                                adventure that lets us explore
+                                                the sights 'n' sounds of this
+                                                remarkable destination. Visit
+                                                architechturally brilliant and
+                                                culture-rich cities of Madrid,
+                                                Seville, Barcelona, Cordoba,
+                                                Valencia on this tour and have
+                                                the experience of a lifetime!
+                                              </p>
+                                            </div>
+                                            <div class="row g-2">
+                                              <div class="col-md-6">
+                                                <div class="about-sec">
+                                                  <h4>inclusion</h4>
+                                                  <ul>
+                                                    <li>
+                                                      Return economy class
+                                                      airfare with taxes
+                                                    </li>
+                                                    <li>
+                                                      Barcelona to Prague
+                                                      Internal flight ticket
+                                                    </li>
+                                                    <li>
+                                                      2 Nights Stay With
+                                                      Breakfast At Prague
+                                                    </li>
+                                                    <li>
+                                                      2 Nights Stay With
+                                                      Breakfast At Budapest
+                                                    </li>
+                                                    <li>
+                                                      1 Night Stay With
+                                                      Breakfast At Vienna
+                                                    </li>
+                                                    <li>
+                                                      Normal Visa Charges of
+                                                      Schengen
+                                                    </li>
+                                                    <li>5% GST</li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6 margin-up">
+                                                <div class="about-sec">
+                                                  <h4>exclusion</h4>
+                                                  <ul>
+                                                    <li>
+                                                      Any Extra Sightseeing
+                                                      Which Is Not Mentioned In
+                                                      The Itinerary
+                                                    </li>
+                                                    <li>
+                                                      Overseas Travel Insurance
+                                                      &amp; Personal Expense
+                                                      Such As Mineral Water,
+                                                      Laundry Etc
+                                                    </li>
+                                                    <li>Personal expenses</li>
+                                                    <li>
+                                                      Excess baggage charge
+                                                    </li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                            <div class="about-sec">
+                                              <h6>
+                                                a road rip along spain's
+                                                mediterranean coast
+                                              </h6>
+                                              <p>
+                                                A road trip along Spain’s
+                                                Mediterranean coast is a
+                                                guarantee of sunshine, lovely
+                                                beaches, and plenty of
+                                                destinations with things to see
+                                                and do. We suggest following the
+                                                coastline at your own pace,
+                                                without a fixed timetable and
+                                                with room to improvise.We choose
+                                                Barcelona as a starting point
+                                                because it’s a huge transport
+                                                hub. You might fancy heading
+                                                north for a couple of days to
+                                                see the Costa Brava (Girona):
+                                                beautiful bays like Roses, coves
+                                                where the pine trees grow right
+                                                to the shoreline, large seaside
+                                                resorts and the fishing villages
+                                                that once inspired Dalí.
+                                              </p>
+                                              <h6>
+                                                the history of spain's great
+                                                civilisations
+                                              </h6>
+                                              <p>
+                                                In Spain, you can get a history
+                                                lesson while you enjoy your
+                                                holiday. Let us show you places
+                                                to visit where you can discover
+                                                milestones of human development,
+                                                like the earliest humans, the
+                                                birth of art, and the power of
+                                                the great civilisations.
+                                              </p>
+                                              <h6>
+                                                foodies, prepare to be enthused
+                                              </h6>
+                                              <p class="bottom-space">
+                                                From tasty tapas to superb
+                                                seafood and traditional roasts,
+                                                food in Spain is all about
+                                                making the most of the best
+                                                local produce.Whether you're on
+                                                a city break in Barcelona or
+                                                Madrid, or you've plumped for a
+                                                countryside or coastal retreat,
+                                                Spanish food is full of flavour
+                                                and character.
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="menu-part accordion tab-pane fade"
+                                            id="itinerary"
+                                          >
+                                            <div
+                                              id="accordion"
+                                              class="accordion-plan"
+                                            >
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingOne"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseOne"
+                                                      aria-expanded="true"
+                                                      aria-controls="collapseOne"
+                                                    >
+                                                      Madrid (1 Night)
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseOne"
+                                                  class="collapse show"
+                                                  aria-labelledby="headingOne"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    Welcome to Madrid - the
+                                                    capital city of Spain. On
+                                                    arrival we enjoy the city
+                                                    orientation tour which
+                                                    includes the Plaza de
+                                                    Espana, Sabatini Garden,
+                                                    Cervantes Statue, Cibeles
+                                                    fountain, Parliament, Puerto
+                                                    del sol. Then visit the
+                                                    Royal Palace and Prado
+                                                    Museum – one of the world's
+                                                    greatest art galleries. From
+                                                    inside.
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          dinner
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/bed.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          night stay in madrid
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingTwo"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link collapsed"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseTwo"
+                                                      aria-expanded="false"
+                                                      aria-controls="collapseTwo"
+                                                    >
+                                                      Madrid – Toledo – Seville
+                                                      (2 Nights)
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseTwo"
+                                                  class="collapse"
+                                                  aria-labelledby="headingTwo"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    Today we proceed to Toledo -
+                                                    declared as World Heritage
+                                                    Site by UNESCO. On arrival
+                                                    we visit the city's most
+                                                    famous monument Santa Maria
+                                                    la Blanca Synagogue. Then we
+                                                    visit Sword factory. Later
+                                                    we leave for Seville
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          breakfast
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          lunch
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          dinner
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/bed.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          night stay in seville
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingThree"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link collapsed"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseThree"
+                                                      aria-expanded="false"
+                                                      aria-controls="collapseThree"
+                                                    >
+                                                      Seville
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseThree"
+                                                  class="collapse"
+                                                  aria-labelledby="headingThree"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    Today we enjoy Seville city
+                                                    tour wherein, we visit the
+                                                    massive cathedral with the
+                                                    Tomb of Christopher
+                                                    Columbus, Moorish Giralda
+                                                    Tower, The Alcázar, a photo
+                                                    stop at Santa Cruz Quarter
+                                                    with flower decked balconies
+                                                    and the Ultramodern expo
+                                                    site - a small scale model
+                                                    of "Victoria" the first
+                                                    vessel to circumnavigate the
+                                                    globe. Then we visit
+                                                    Metropol Parasol - The
+                                                    largest wooden structure in
+                                                    the world. In the evening we
+                                                    enjoy the Flamenco Show with
+                                                    dinner.
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          breakfast
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          lunch
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          dinner
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/bed.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          night stay in seville
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingFour"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseFour"
+                                                      aria-expanded="true"
+                                                      aria-controls="collapseFour"
+                                                    >
+                                                      Seville – Costa Del Sol –
+                                                      Malaga (1 Night)
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseFour"
+                                                  class="collapse"
+                                                  aria-labelledby="headingFour"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    Today we proceed to Costa
+                                                    del Sol - a region in the
+                                                    south of Spain. Here we
+                                                    explore Puerto Banus, then
+                                                    we proceed to Malaga. On
+                                                    arrival we enjoy orientation
+                                                    tour which includes
+                                                    Cathedral of Malaga, Plaza
+                                                    de la Merced, The Museo
+                                                    Picasso from outside, then
+                                                    we visit Moorish fortress La
+                                                    Alcazaba.
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          breakfast
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          lunch
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          dinner
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/bed.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          night stay in Málaga
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingFive"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link collapsed"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseFive"
+                                                      aria-expanded="false"
+                                                      aria-controls="collapseFive"
+                                                    >
+                                                      Malaga – Cordoba –
+                                                      Valencia (1 Night)
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseFive"
+                                                  class="collapse"
+                                                  aria-labelledby="headingFive"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    Today we proceed to Cordoba.
+                                                    On arrival we visit Mezquita
+                                                    from inside followed by
+                                                    orientation city tour which
+                                                    includes Roman bridge, Arab
+                                                    waterwheels and Plaza del
+                                                    Potro. Then we leave for
+                                                    Valencia.
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          breakfast
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          lunch
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          dinner
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/bed.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          night stay in Valencia
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingSix"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link collapsed"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseSix"
+                                                      aria-expanded="false"
+                                                      aria-controls="collapseSix"
+                                                    >
+                                                      Valencia – Barcelona (2
+                                                      Nights)
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseSix"
+                                                  class="collapse"
+                                                  aria-labelledby="headingSix"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    Today we enjoy orientation
+                                                    city tour which includes
+                                                    Plaza del Mercado, Serranos
+                                                    Towers, Plaza de Ayuntamento
+                                                    and Cathedral of Valencia.
+                                                    Then we visit City of Arts
+                                                    and Sciences- to see the
+                                                    work of the Valencian
+                                                    architect Santiago
+                                                    Calatrava, several of its
+                                                    buildings have become icons
+                                                    in the city. Then we visit
+                                                    Ceramics Museum from inside.
+                                                    Later we proceed to
+                                                    Barcelona. On arrival we
+                                                    visit Poble Espanyol – an
+                                                    open air Archaeological
+                                                    museum and Spanish village
+                                                    showing replicas of
+                                                    characteristic houses from
+                                                    all regions of Spain.
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          breakfast
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          lunch
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          dinner
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/bed.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          night stay in
+                                                          Barcelona
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingSeven"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link collapsed"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseSeven"
+                                                      aria-expanded="false"
+                                                      aria-controls="collapseSeven"
+                                                    >
+                                                      Barcelona
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseSeven"
+                                                  class="collapse"
+                                                  aria-labelledby="headingSeven"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    Today we enjoy Barcelona
+                                                    city orientation tour which
+                                                    includes Olympic stadium,
+                                                    colourful La Ramblas, Statue
+                                                    of Christopher Columbus and
+                                                    visit Gaudi's Sagrada
+                                                    Familia Cathedral Antoni
+                                                    Gaudí's unfinished
+                                                    masterpiece. Later we take a
+                                                    cable car ride to Montjuic
+                                                    hill which gives a panoramic
+                                                    view of the entire Barcelona
+                                                    city and Tibidado hill.
+                                                    Today evening we enjoy beach
+                                                    front of Barcelona.
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          breakfast
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          lunch
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          dinner
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/bed.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          night stay in
+                                                          Barcelona
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="card">
+                                                <div
+                                                  class="card-header dark-body"
+                                                  id="headingEight"
+                                                >
+                                                  <h5 class="mb-0">
+                                                    <button
+                                                      class="btn btn-link collapsed"
+                                                      data-bs-toggle="collapse"
+                                                      data-bs-target="#collapseEight"
+                                                      aria-expanded="false"
+                                                      aria-controls="collapseEight"
+                                                    >
+                                                      Departure from Barcelona
+                                                    </button>
+                                                  </h5>
+                                                </div>
+                                                <div
+                                                  id="collapseEight"
+                                                  class="collapse"
+                                                  aria-labelledby="headingEight"
+                                                  data-bs-parent="#accordion"
+                                                >
+                                                  <div
+                                                    class="card-body card-body--modifay"
+                                                  >
+                                                    It’s time now to say goodbye
+                                                    to our travel companions.
+                                                    Let us be in contact with
+                                                    each other through email,
+                                                    Facebook, and meet again on
+                                                    one more memorable tour. See
+                                                    you all!!
+                                                    <div class="highlight">
+                                                      <ul>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          breakfast
+                                                        </li>
+                                                        <li>
+                                                          <img
+                                                            src="images/fork.png"
+                                                            class="img-fluid blur-up lazyload"
+                                                            alt=""
+                                                          />
+                                                          lunch
+                                                        </li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="menu-part tab-pane fade"
+                                            id="gallery"
+                                          >
+                                            <div
+                                              class="container-fluid p-0 ratio3_2"
+                                            >
+                                              <div class="row g-4 zoom-gallery">
+                                                <div class="col-lg-4 col-sm-6">
+                                                  <div class="overlay">
+                                                    <a
+                                                      href="../assets/images/tours/tour/7.jpg"
+                                                    >
+                                                      <div
+                                                        class="overlay-background"
+                                                      >
+                                                        <i
+                                                          class="fa fa-plus"
+                                                          aria-hidden="true"
+                                                        ></i>
+                                                      </div>
+                                                      <img
+                                                        src="images/7.jpg"
+                                                        alt=""
+                                                        class="img-fluid blur-up lazyload bg-img"
+                                                      />
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6">
+                                                  <div class="overlay">
+                                                    <a
+                                                      href="../assets/images/tours/tour/8.jpg"
+                                                    >
+                                                      <div
+                                                        class="overlay-background"
+                                                      >
+                                                        <i
+                                                          class="fa fa-plus"
+                                                          aria-hidden="true"
+                                                        ></i>
+                                                      </div>
+                                                      <img
+                                                        src="images/8.jpg"
+                                                        alt=""
+                                                        class="img-fluid blur-up lazyload bg-img"
+                                                      />
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6">
+                                                  <div class="overlay">
+                                                    <a
+                                                      href="../assets/images/tours/tour/9.jpg"
+                                                    >
+                                                      <div
+                                                        class="overlay-background"
+                                                      >
+                                                        <i
+                                                          class="fa fa-plus"
+                                                          aria-hidden="true"
+                                                        ></i>
+                                                      </div>
+                                                      <img
+                                                        src="images/9.jpg"
+                                                        alt=""
+                                                        class="img-fluid blur-up lazyload bg-img"
+                                                      />
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6">
+                                                  <div class="overlay">
+                                                    <a
+                                                      href="../assets/images/tours/tour/10.jpg"
+                                                    >
+                                                      <div
+                                                        class="overlay-background"
+                                                      >
+                                                        <i
+                                                          class="fa fa-plus"
+                                                          aria-hidden="true"
+                                                        ></i>
+                                                      </div>
+                                                      <img
+                                                        src="images/10.jpg"
+                                                        alt=""
+                                                        class="img-fluid blur-up lazyload bg-img"
+                                                      />
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6">
+                                                  <div class="overlay">
+                                                    <a
+                                                      href="../assets/images/tours/tour/11.jpg"
+                                                    >
+                                                      <div
+                                                        class="overlay-background"
+                                                      >
+                                                        <i
+                                                          class="fa fa-plus"
+                                                          aria-hidden="true"
+                                                        ></i>
+                                                      </div>
+                                                      <img
+                                                        src="images/11.jpg"
+                                                        alt=""
+                                                        class="img-fluid blur-up lazyload bg-img"
+                                                      />
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                                <div class="col-lg-4 col-sm-6">
+                                                  <div class="overlay">
+                                                    <a
+                                                      href="../assets/images/tours/tour/12.jpg"
+                                                    >
+                                                      <div
+                                                        class="overlay-background"
+                                                      >
+                                                        <i
+                                                          class="fa fa-plus"
+                                                          aria-hidden="true"
+                                                        ></i>
+                                                      </div>
+                                                      <img
+                                                        src="images/12.jpg"
+                                                        alt=""
+                                                        class="img-fluid blur-up lazyload bg-img"
+                                                      />
+                                                    </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="menu-part tab-pane fade"
+                                            id="accommodations"
+                                          >
+                                            <div class="list-view">
+                                              <div class="list-box">
+                                                <div class="list-img">
+                                                  <a href="#">
+                                                    <img
+                                                      src="images/1_1.jpg"
+                                                      class="img-fluid blur-up lazyload"
+                                                      alt=""
+                                                    />
+                                                  </a>
+                                                </div>
+                                                <div class="list-content">
+                                                  <div>
+                                                    <a href="#">
+                                                      <h5>sea view hotel</h5>
+                                                    </a>
+                                                    <p>
+                                                      dubai, 2km from center
+                                                    </p>
+                                                    <div class="rating">
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i
+                                                        class="fa fa-star-o"
+                                                      ></i>
+                                                      <span>26412 review</span>
+                                                    </div>
+                                                    <p class="hotel-info">
+                                                      relax and unwind with a
+                                                      special stay offer at a
+                                                      superlative value.
+                                                      conveniently located,
+                                                      offers spacious rooms.
+                                                      great dinning options. gym
+                                                      &amp; pool. innovative
+                                                      dinning and bar options.
+                                                      relaxing spa open till 2
+                                                      A.M.
+                                                    </p>
+                                                    <div class="facility-icon">
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/beer.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>bar</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/wifi.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>wifi</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/sunset.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>beach</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/pool.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>swimming</span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="list-view">
+                                              <div class="list-box">
+                                                <div class="list-img">
+                                                  <a href="#">
+                                                    <img
+                                                      src="images/2_1.jpg"
+                                                      class="img-fluid blur-up lazyload"
+                                                      alt=""
+                                                    />
+                                                  </a>
+                                                </div>
+                                                <div class="list-content">
+                                                  <div>
+                                                    <a href="#">
+                                                      <h5>sea view hotel</h5>
+                                                    </a>
+                                                    <p>
+                                                      dubai, 2km from center
+                                                    </p>
+                                                    <div class="rating">
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i
+                                                        class="fa fa-star-o"
+                                                      ></i>
+                                                      <span>26412 review</span>
+                                                    </div>
+                                                    <p class="hotel-info">
+                                                      relax and unwind with a
+                                                      special stay offer at a
+                                                      superlative value.
+                                                      conveniently located,
+                                                      offers spacious rooms.
+                                                      great dinning options. gym
+                                                      &amp; pool. innovative
+                                                      dinning and bar options.
+                                                      relaxing spa open till 2
+                                                      A.M.
+                                                    </p>
+                                                    <div class="facility-icon">
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/beer.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>bar</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/wifi.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>wifi</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/sunset.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>beach</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/pool.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>swimming</span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            <div class="list-view">
+                                              <div class="list-box">
+                                                <div class="list-img">
+                                                  <a href="#">
+                                                    <img
+                                                      src="images/3.jpg"
+                                                      class="img-fluid blur-up lazyload"
+                                                      alt=""
+                                                    />
+                                                  </a>
+                                                </div>
+                                                <div class="list-content">
+                                                  <div>
+                                                    <a href="#">
+                                                      <h5>sea view hotel</h5>
+                                                    </a>
+                                                    <p>
+                                                      dubai, 2km from center
+                                                    </p>
+                                                    <div class="rating">
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i class="fa fa-star"></i>
+                                                      <i
+                                                        class="fa fa-star-o"
+                                                      ></i>
+                                                      <span>26412 review</span>
+                                                    </div>
+                                                    <p class="hotel-info">
+                                                      relax and unwind with a
+                                                      special stay offer at a
+                                                      superlative value.
+                                                      conveniently located,
+                                                      offers spacious rooms.
+                                                      great dinning options. gym
+                                                      &amp; pool. innovative
+                                                      dinning and bar options.
+                                                      relaxing spa open till 2
+                                                      A.M.
+                                                    </p>
+                                                    <div class="facility-icon">
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/beer.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>bar</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/wifi.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>wifi</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/sunset.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>beach</span>
+                                                      </div>
+                                                      <div class="facility-box">
+                                                        <img
+                                                          src="images/pool.png"
+                                                          class="img-fluid blur-up lazyload"
+                                                          alt=""
+                                                        />
+                                                        <span>swimming</span>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="menu-part tab-pane fade map"
+                                            id="location"
+                                          >
+                                            <iframe
+                                              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.9147718689!2d-74.11976358820196!3d40.69740344169578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1568001991098!5m2!1sen!2sin"
+                                              style="border: 0"
+                                              allowfullscreen=""
+                                            ></iframe>
+                                          </div>
+                                          <div
+                                            class="menu-part tab-pane fade review"
+                                            id="review"
+                                          >
+                                            <div class="review-box">
+                                              <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <span
+                                                  >Wonderful
+                                                  Experience...!!</span
+                                                >
+                                              </div>
+                                              <h6>by xyz, jun 18, 2019</h6>
+                                              <p>
+                                                Our family holiday to Spain was
+                                                awesome .pocket friendly rates
+                                                that make planning a holiday a
+                                                delight. I got a good hotels,
+                                                flight discount for my round
+                                                trip flight for the same trip
+                                                while booking from sites.Thank
+                                                you moment for giving us a
+                                                wonderful experience.
+                                              </p>
+                                            </div>
+                                            <div class="review-box">
+                                              <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <span
+                                                  >Excellent Arrangements</span
+                                                >
+                                              </div>
+                                              <h6>by xyz, jun 18, 2019</h6>
+                                              <p>
+                                                Rica holidays planned our family
+                                                trip to Spain, it was so
+                                                perfect. Everything was
+                                                flawless, in-case if any
+                                                confusions there was always
+                                                someone to assist us at any
+                                                point. Had a wonderful
+                                                experience and thanks to these
+                                                guys for making it happen. I
+                                                would really recommend them for
+                                                further vacation planning.
+                                              </p>
+                                            </div>
+                                            <div class="review-box">
+                                              <div class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-o"></i>
+                                                <span
+                                                  >Best getaway destination with
+                                                  family</span
+                                                >
+                                              </div>
+                                              <h6>by xyz, jun 18, 2019</h6>
+                                              <p>
+                                                Extremely happy with my trip to
+                                                Spain. All the arrangements were
+                                                spot on and cabs were punctual.
+                                                Never had any hiccups and we
+                                                enjoyed the trip immensely.
+                                                Thanks you for organizing such a
+                                                wonderful trip and taking care
+                                                of all my special request with
+                                                patience and skill.
+                                              </p>
+                                            </div>
+                                          </div>
+                                          <div
+                                            class="about menu-part tab-pane fade"
+                                            id="policy"
+                                          >
+                                            <div class="about-sec">
+                                              <h6 class="resturant-6">
+                                                Payment Policy
+                                              </h6>
+                                              <ul class="policiy-6">
+                                                <li>
+                                                  Initial deposit – INR. 1,
+                                                  00,000 per person at the time
+                                                  of booking.
+                                                </li>
+                                                <li>
+                                                  1st part payment 50% of the
+                                                  tour cost at least 60 days
+                                                  prior departure.
+                                                </li>
+                                                <li>
+                                                  Balance payment 30 days prior
+                                                  departure.
+                                                </li>
+                                              </ul>
+                                            </div>
+                                            <div class="about-sec">
+                                              <h6 class="resturant-6">
+                                                Cancellation Policy
+                                              </h6>
+                                              <ul class="policiy-6">
+                                                <li>
+                                                  Deposit of INR 1,00,000 per
+                                                  person is non-refundable in
+                                                  any case once booking is
+                                                  confirmed.
+                                                </li>
+                                                <li>
+                                                  45 Days to 60 days prior to
+                                                  departure – 50% of the total
+                                                  tour cost.
+                                                </li>
+                                                <li>
+                                                  30 to 44 Days prior to
+                                                  departure 75 % of the tour
+                                                  cost.
+                                                </li>
+                                                <li>
+                                                  Within 30 days of departure
+                                                  100% of the tour cost.
+                                                </li>
+                                              </ul>
+                                            </div>
+                                            <div class="about-sec">
+                                              <h6 class="resturant-6">
+                                                Important Terms and Conditions
+                                              </h6>
+                                              <ul class="policiy-6">
+                                                <li>
+                                                  All travelers have to carry
+                                                  their own passports, tickets,
+                                                  forex &amp; any other
+                                                  important documents. It is
+                                                  recommended to leave passport
+                                                  photocopy at your resident,
+                                                  office &amp; carry one copy
+                                                  while travelling.
+                                                </li>
+                                                <li>
+                                                  Passengers having excess
+                                                  baggage over 20 kgs per person
+                                                  in check in baggage &amp; 07
+                                                  kgs in hand luggage are liable
+                                                  to pay excess baggage charge
+                                                  directly at airport.
+                                                </li>
+                                                <li>
+                                                  Any sightseeing not mentioned
+                                                  in the itinerary will have to
+                                                  be paid directly.
+                                                </li>
+                                                <li>
+                                                  For the convenience of
+                                                  passengers the itinerary may
+                                                  be amended.
+                                                </li>
+                                                <li>
+                                                  Flight cost and availability
+                                                  are subject to change at time
+                                                  of actual booking.
+                                                </li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </section>
+                                <!-- section end -->
+                              </div>
+
+                              <div class="card-footer text-end">
+                                <button
+                                  type="button"
+                                  class="btn btn-outline-primary prev-step"
+                                >
+                                  Previous
+                                </button>
+                                <button type="submit" class="btn btn-success">
+                                  Submit
+                                </button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid Ends-->
+
+          <div class="container-fluid">
+            <!-- footer start-->
+            <footer class="footer">
+              <div class="row">
+                <div class="col-md-12 footer-copyright text-center">
+                  <p class="mb-0">Copyright 2024 © We Care Cabs</p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
+            <p>Are you sure you want to log out?</p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <div class="button-box">
+              <button type="button" class="btn btn--no" data-bs-dismiss="modal">
+                No
+              </button>
+              <button type="button" class="btn btn--yes btn-primary">
+                Yes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="node_modules/froala-editor/js/froala_editor.pkgd.min.js"
+    ></script>
+    <script src="/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="/editor.js"></script>
+    <script>
+      var editor = new FroalaEditor("#froala");
+    </script>
+    <!-- latest jquery-->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- feather icon js-->
+    <script src="js/feather.min.js"></script>
+    <script src="js/feather-icon.js"></script>
+    <!-- scrollbar js-->
+    <script src="js/simplebar.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- Sidebar jquery-->
+    <script src="js/config.js"></script>
+    <!-- Plugins JS start-->
+
+    <!-- bootstrap tag-input JS start-->
+    <script src="js/bootstrap-tagsinput.min.js"></script>
+
+    <!-- customizer js start  -->
+    <script src="js/customizer.js"></script>
+    <!-- customizer js start  -->
+    <script src="js/sidebar-menu.js"></script>
+
+    <!--Dropzon start-->
+    <script src="js/dropzone.js"></script>
+    <script src="js/dropzone-script.js"></script>
+    <!--Dropzon end-->
+
+    <!-- Plugins JS start-->
+    <script src="js/apex-chart.js"></script>
+    <script src="js/stock-prices.js"></script>
+    <script src="js/bootstrap-notify.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/handlebars_1.js"></script>
+    <script src="js/typeahead.bundle.js"></script>
+    <script src="js/typeahead.custom.js"></script>
+    <script src="js/handlebars.js"></script>
+    <script src="js/typeahead-custom.js"></script>
+    <!-- Plugins JS Ends-->
+
+    <!-- Theme js-->
+    <script src="js/script.js"></script>
+  </body>
+</html>

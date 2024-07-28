@@ -40,6 +40,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+
+    <!-- flag with country -->
+
+    <!-- end here -->
   </head>
 
   <body>
@@ -351,7 +355,7 @@
                         <a href="package-detail.html">Destinations Detail</a>
                       </li>
                       <li>
-                        <a href="add-new-package.html">Add Destinations</a>
+                        <a href="add-new-destinations.html">Add Destinations</a>
                       </li>
                       <li>
                         <a href="all-package-categories.html"
@@ -481,11 +485,25 @@
                             <!-- start -->
                             <div class="">
                               <div class="row mb-3">
-                                <div class="col-12 col-md-6">
-                                  <label class="form-label-title"
-                                    >Country</label
+                                <div class="col-6 mb-3">
+                                  <label
+                                    for="tour-category"
+                                    class="form-label-title"
+                                    >Seclect Country
+                                    <span
+                                      class="mb-0 font-roboto text-end"
+                                      style="font-size: 11px"
+                                    >
+                                      <i class="middle fa fa-clock-o"></i> 11:30
+                                      PM
+                                    </span>
+                                    <span class="mb-0 font-roboto">
+                                      <i class="middle fa fa-pencil"></i> </span
+                                  ></label>
+                                  <select
+                                    id="tour-category"
+                                    class="js-example-basic-single col-sm-12"
                                   >
-                                  <select class="form-control">
                                     <option value="">Select Country</option>
                                     <option value="india">India</option>
                                     <option value="usa">USA</option>
@@ -507,8 +525,15 @@
                             </div>
 
                             <!-- end -->
+                            <!-- <label class="form-label-title">
+                              Create Route
+                            </label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Add Route Headline"
+                            /> -->
                           </div>
-
                           <div class="mb-3">
                             <div
                               class="d-flex justify-content-between align-center"
